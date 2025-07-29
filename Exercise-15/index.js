@@ -16,10 +16,5 @@ function productFinder(productList, productParam) {
        }
   }
   return items;
-    
-    
-  
-  
-  
 }
 console.log(productFinder(products, "Camiseta"));
