@@ -9,10 +9,9 @@ const placesToTravel = [
 
 function placeFinder(places) {
     let idNotFound = [11, 40];
+
     for (const place of places) {
-        if (idNotFound.includes(place.id)) {
-            console.log(`El lugar con ID ${place.id} no se encuentra en la lista.`);
-        } else {
+        if (!idNotFound.includes(place.id)) {
             console.log(`Voy a viajar a ${place.name}`);
         }
     }
