@@ -38,4 +38,4 @@ function getCapital(country) {
 }
 
 
-console.log(getCapital(countryQuest)); // Output: Madrid
+console.log(getCapital(countryQuest));
