@@ -35,10 +35,14 @@ function askToRoll() {
     rl.question('¿Quieres tirar el dado? (s/n): ', (answer) => {
         if (answer.toLowerCase() === 's') {
             rollDice();
-            askToRoll(); // vuelve a preguntar
-        } else {
+            askToRoll();
+        } if (answer.toLowerCase() === 'n') {
             console.log('¡Juego terminado!');
             rl.close();
+        }
+        else {
+            console.log('Respuesta no válida. Por favor, responde con "s" o "n".');
+            askToRoll();
         }
     });
 }
